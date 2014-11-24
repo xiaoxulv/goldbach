@@ -56,11 +56,9 @@ def goldbach(k):
 				f[i] = True
 				c = c + 1
 	if c == 1 + int(k-4)/2:
-		LIS.append(True)
-		return LIS
+		return(LIS, True)
 	else:
-		LIS.append(False)
-		return LIS
+		return(LIS, False)
 
 def goldbachWidth(k):
 	#returns a dictionary (map) D such that D[z] is the number of ways 
